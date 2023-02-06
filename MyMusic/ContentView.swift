@@ -16,7 +16,7 @@ struct ContentView: View {
                 .resizable()
             // セーフエリア外まで表示されるよう指定
                 .ignoresSafeArea()
-            // アスペクト比を維持して短辺基準に収める
+            // アスペクト比を維持してビューをその親に合わせてスケーリングする
                 .scaledToFill()
         }
     }

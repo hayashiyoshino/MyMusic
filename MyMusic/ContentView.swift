@@ -18,6 +18,20 @@ struct ContentView: View {
                 .ignoresSafeArea()
             // アスペクト比を維持してビューをその親に合わせてスケーリングする
                 .scaledToFill()
+            
+            // 横方向にレイアウト
+            HStack {
+                Button {
+                    
+                } label: {
+                    Image("cymbal")
+                }
+                Button {
+                    
+                } label: {
+                    Image("guitar")
+                }
+            }
         }
     }
 }

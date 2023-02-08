@@ -14,5 +14,12 @@ class SoundPlayer: NSObject {
     
     // シンバル用プレイヤーの変数
     var cymbalPlayer: AVAudioPlayer!
+    
+    func cymbalPlay() {
+        // シンバル用のプレイヤーに、音源データを指定
+        cymbalPlayer = AVAudioPlayer(data: cymbalData)
+        
+        // シンバルの音源再生
+        cymbalPlayer.play()
     }
 }

@@ -11,9 +11,13 @@ import AVFoundation
 class SoundPlayer: NSObject {
     // シンバルの音源データを読み込み
     let cymbalData = NSDataAsset(name: "cymbalSound")!.data
+    // ギターの音源データを読み込み
+    let guitarData = NSDataAsset(name: "guitarSound")!.data
     
     // シンバル用プレイヤーの変数
     var cymbalPlayer: AVAudioPlayer!
+    // ギター用プレイヤーの変数
+    var guitarPlayer: AVAudioPlayer!
     
     func cymbalPlay() {
         do {

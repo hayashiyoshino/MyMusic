@@ -32,7 +32,9 @@ struct ContentView: View {
                     Image("cymbal")
                 }
                 Button {
-                    
+                    // ボタンをタップした時のアクション
+                    // ギターの音を鳴らす
+                    soundPlayer.guitarPlay()
                 } label: {
                     Image("guitar")
                 }

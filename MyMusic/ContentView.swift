@@ -25,7 +25,9 @@ struct ContentView: View {
             // 横方向にレイアウト
             HStack {
                 Button {
-                    
+                    // ボタンをタップした時のアクション
+                    // シンバルの音を鳴らす
+                    soundPlayer.cymbalPlay()
                 } label: {
                     Image("cymbal")
                 }

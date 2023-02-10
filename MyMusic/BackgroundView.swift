@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct BackgroundView: View {
+    // 画像ファイル名
+    let imageName: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(imageName)
+            .resizable()
+            .ignoresSafeArea()
+            .scaledToFill()
     }
 }
 
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
-        BackgroundView()
+        BackgroundView(imageName: "background")
     }
 }

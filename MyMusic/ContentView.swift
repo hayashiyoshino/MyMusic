@@ -13,15 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            // 背景画像を指定
-            Image("background")
-            // リサイズする
-                .resizable()
-            // セーフエリア外まで表示されるよう指定
-                .ignoresSafeArea()
-            // アスペクト比を維持してビューをその親に合わせてスケーリングする
-                .scaledToFill()
-            
+            BackgroundView(imageName: "background")
             // 横方向にレイアウト
             HStack {
                 Button {
